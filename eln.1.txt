@@ -1,0 +1,5 @@
+Started experiment on May 24, 2025 using sample "Quartz powder".
+Used synchrotron source "PETRA III" with 12.0 keV X-ray beam.
+Detector is CCD at 150 mm. Measured at rotation angle 22.5°.
+Monitored by timer preset 60.0s.
+Detector readings: 1045, 1100, 1089, 1075. Polar angles: 10.0, 11.0, 12.0, 13.0.

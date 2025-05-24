@@ -1,0 +1,1 @@
+Experiment on NaCl sample on April 15, 2025 at 10:35. X-ray beam from source "DESY beamline P06". Probe type: x-ray, energy: 15.0 keV. Collected 5 detector values: 900, 920, 910, 890, 875. Polar angles were 5.0–9.0°. Rotation angle 30.0°. Monitor ran in monitor mode, preset 5000.0, integral 4920.0.
