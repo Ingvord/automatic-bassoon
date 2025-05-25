@@ -1,0 +1,8 @@
+Started neutron diffraction scan on April 2, 2025 using alloy sample "FeCrNi".
+Instrument: ISIS beamline NIMROD.
+Source type: neutron, probe energy not specified.
+Detector (He-3 tubes) returned 3 counts: 305, 290, 295 with polar angles: 45.0, 50.0, 55.0.
+Sample fixed, no rotation.
+Monitoring mode was 'monitor' with preset 3000.0 and integral 2980.5.
+No monochromator used.
+Single wavelength: 1.8 Å.

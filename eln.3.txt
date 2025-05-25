@@ -1,0 +1,7 @@
+On May 10, 2025, performed calibration run with silicon powder standard.
+The beam source was a synchrotron named "MAX IV BL11", using 10.5 keV x-ray probe.
+Detector used was CMOS type, placed at 200 mm distance.
+The sample was rotated at 15.0°.
+Monitoring was set to timer mode with preset 120.0 seconds.
+Acquired 6 detector points: 1230, 1255, 1240, 1225, 1210, 1195.
+Corresponding polar angles: 20.0 to 25.0 degrees, in steps of 1.0.

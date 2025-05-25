@@ -1,10 +1,13 @@
 package ru.ingvord.automatic.bassoon;
 
+import com.github.dockerjava.api.DockerClient;
+import com.github.dockerjava.api.model.Image;
 import dev.langchain4j.model.ollama.OllamaChatModel;
 import dev.langchain4j.service.AiServices;
+import org.testcontainers.DockerClientFactory;
+import org.testcontainers.containers.Container;
+import org.testcontainers.utility.DockerImageName;
 import ru.ingvord.automatic.bassoon.ai.services.ElnExtractor;
-import ru.ingvord.automatic.bassoon.ai.services.ElnParser;
-import ru.ingvord.automatic.bassoon.ai.tools.Hdf5StorageTools;
 import ru.ingvord.automatic.bassoon.entities.NXmonopdEntry;
 import ru.ingvord.automatic.bassoon.hdf5.Hdf5Writer;
 
@@ -12,6 +15,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.Duration;
+import java.util.List;
 
 import static dev.langchain4j.model.chat.request.ResponseFormat.JSON;
 
@@ -21,7 +25,7 @@ public class Application {
 
         OllamaChatModel model = OllamaChatModel.builder()
                 .baseUrl("http://localhost:11434")
-                .modelName("gemma3:4b")
+                .modelName("gemma3:1b")
 //                .responseFormat(JSON)
                 .temperature(0.8)
                 .logRequests(true)
