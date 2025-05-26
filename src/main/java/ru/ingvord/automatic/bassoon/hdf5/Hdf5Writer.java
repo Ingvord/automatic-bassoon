@@ -14,7 +14,9 @@ public class Hdf5Writer {
 
     public void write(NXmonopdEntry entry, String inputFile) throws IOException {
         System.out.println("Writing entry: " + entry);
+        // create a new file
         try(WritableHdfFile target = HdfFile.write(Paths.get(inputFile.replace(".txt", ".h5")))) {
+            // writing scalar data
             target.putDataset("title", Optional.ofNullable(entry.title()).orElse("NA"));
             target.putDataset("startTime", Optional.ofNullable(entry.startTime()).orElse(LocalDateTime.now()).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli());
             target.putDataset("definition", Optional.ofNullable(entry.definition()).orElse("NA"));
@@ -22,6 +24,7 @@ public class Hdf5Writer {
             target.putDataset("instrument_source_name", Optional.ofNullable(entry.instrument().source().name()).orElse("NA"));
             target.putDataset("instrument_source_type", Optional.ofNullable(entry.instrument().source().type()).orElse("NA"));
             target.putDataset("instrument_source_probe", Optional.ofNullable(entry.instrument().source().probe()).orElse("NA"));
+            // writing arrays
             var wavelength = entry.instrument().crystal().wavelength();
             if(Objects.nonNull(wavelength) && !entry.instrument().crystal().wavelength().isEmpty())
                 target.putDataset("instrument_crystal_wavelength",
