@@ -23,6 +23,7 @@ public class Application {
     public static void main(String[] args) throws IOException {
 
 
+        // runs in CPU-mode of this small laptop (no GPU)
         OllamaChatModel model = OllamaChatModel.builder()
                 .baseUrl("http://localhost:11434")
                 .modelName("gemma3:1b")
