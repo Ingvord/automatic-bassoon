@@ -1,12 +1,7 @@
 package ru.ingvord.automatic.bassoon;
 
-import com.github.dockerjava.api.DockerClient;
-import com.github.dockerjava.api.model.Image;
 import dev.langchain4j.model.ollama.OllamaChatModel;
 import dev.langchain4j.service.AiServices;
-import org.testcontainers.DockerClientFactory;
-import org.testcontainers.containers.Container;
-import org.testcontainers.utility.DockerImageName;
 import ru.ingvord.automatic.bassoon.ai.services.ElnExtractor;
 import ru.ingvord.automatic.bassoon.entities.NXmonopdEntry;
 import ru.ingvord.automatic.bassoon.hdf5.Hdf5Writer;
